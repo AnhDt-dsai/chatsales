@@ -1,0 +1,73 @@
+version: "3.1"
+
+intents:
+  - goodbye
+  - greet
+  - thank_you
+  - sorry
+  - help
+  - find_products
+  - find_hotsales
+  - wantto_buy
+  - deal_infor
+  - policy
+  - product_detail
+  - out_of_scope
+
+actions:
+  - action_chatgpt_default_fallback
+  - action_greet
+  - action_sale_form
+  - action_find_product
+
+
+responses:
+  utter_help:
+  - text: "Tớ có thể hỗ trợ bạn các tìm hiểu các dịch vụ AI của công ty Imtatech  \n Ví dụ như: \n- Giới thiệu về công ty Imtatech \n- Có những dịch vụ phần mềm gì? \n- Có những dịch vụ AI gì?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_goodbye:
+  - text: "Nếu cậu cần hỗ trợ thêm hãy liên hệ trực tiếp với chúng tớ. Mong gặp lại cậu!\n https://www.imtatech.com/lien-he"
+
+  utter_greet:
+  - text: "Xin chào, Tớ là Cá Ngừ - chatbot tự động. Tớ có thể giúp gì cho cậu khum?"
+  - text: "Tớ là Cá Ngừ - chatbot tự động. Tớ có thể giúp gì cho cậu khum?"
+
+  utter_thank_you:
+  - text: "Chuyện nhỏ thôi ^^"
+  - text: "You're welcome!"
+  - text: "Rất sẵn lòng ^^"
+  - text: "Không có gì ạ."
+
+  utter_sorry:
+  - text: "Tớ xin lỗi 😐"
+  - text: "Có thể tớ chưa biết về điều đó 😢"
+  - text: "Rất tiếc, nếu có bất kì sai sót gì thì mong cậu lượng thứ. Để biết thêm thông tin chi tiết vui lòng liên hệ hotline 0789109941 hoặc qua email contact@imtatech.com"
+
+  utter_find_products:
+  - text: "Dưới đây là danh sách các sản phẩm áo len"
+  utter_find_hotsales:
+  - text: "Dưới đây là danh sách các sản phẩm hot nhất"
+  
+  utter_wantto_buy:
+  - text: "Bạn hãy nhập theo cú pháp [tên người mua] - [số điện thoại] - [mã sản phẩm]\n Ví dụ: Thảo Anh - 0912573955 - AOLEN123"
+
+  utter_policy:
+  - text: "Đây chính sách hoàn trả và bảo hành của bên mình"
+
+  utter_product_detail:
+  - text: "product_detail"
+
+
+  utter_out_of_scope:
+  - text: "Sorry, try again"
+
+
+
+session_config:
+  session_expiration_time: 60 
+  carry_over_slots_to_new_session: false
+

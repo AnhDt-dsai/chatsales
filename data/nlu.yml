@@ -1,0 +1,96 @@
+version: "3.1"
+
+nlu:
+- intent: goodbye
+  examples: |    
+    - goodbye
+    - tạm biệt bạn
+    - tạm biệt
+    - Tạm biệt, hẹn gặp lại!
+    - hẹn gặp lại
+
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - xin chào 
+    - chào
+    - chào bạn
+    - xin chào bạn
+    - cậu là ai thế ?
+
+- intent: thank_you
+  examples: |
+    - thank you
+    - cảm ơn
+    - cảm ơn bạn
+    - cảm ơn nhiều nhé
+    - cảm ơn bạn nhiều
+
+- intent: sorry
+  examples: |
+    - bạn trả lời không đúng
+    - bạn trả lời sai rồi
+    - non vậy
+    - gà vậy
+
+- intent: help
+  examples: |
+    - Bạn có thể giúp tôi tìm thông tin về dịch vụ này được không?
+    - bạn có thể làm được gì
+    - cho tôi biết bạn có thể làm được gì
+    - bạn có thể giúp tôi chứ
+    - bạn có thể trả lời câu hỏi của tôi chứ
+
+- intent: find_products
+  examples: |
+    - tôi muốn mua đồ
+    - tôi muốn mua ghim
+    - có những loại móc cài nào
+    - có những loại bông cài 
+    - tớ muốn mua áo len
+    - tớ muốn mua quần
+
+- intent: find_hotsales
+  examples: |
+    - các sản phẩm bán chạy
+    - sản phẩm nào đang bán chạy nhất
+
+- intent: wantto_buy
+  examples: |
+    - tôi muốn mua đồ có mã 12345123
+    - tôi muốn mua đồ có mã 23451234
+    - tôi muốn mua đồ có mã 59763480
+    - Vậy tôi sẽ mua áo len aolen123
+    - chốt quần quandui473
+    - Tớ sẽ mua móc cài mã moccai997
+    - Vậy cho tớ mua áo len mã AOLEN123 nhé
+- intent: deal_infor
+  examples: |
+    - Nguyễn Văn Anh - 0987654321 - 12345123
+    - Phạm văn nam - 0356743561 - 98237456
+    - Thành công - 98204983 - Aobalo2
+    - Mai Thị Mầu - 09765273823 - MC675
+    - hải nam - 0387348724 - CV213
+    - ngô anh quân - 0919278743 - v384
+
+- intent: policy
+  examples: |
+    - Chính sách hoàn trả như thế nào
+    - Chính sách đổi trả như thế nào
+
+- intent: out_of_scope
+  examples: |
+    - xin chào 
+    - vãi
+
+- intent: product_detail
+  examples: |
+    - tôi muốn biết giá của cái móc cài này
+    - tôi muốn biết giá của cái bông tai này
+    - cái khuy cài này còn hàng không
+    
+
+
+
+

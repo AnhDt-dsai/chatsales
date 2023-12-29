@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+
+- story: A path
+  steps:
+  - intent: greet
+  - action: action_greet
+
+- story: B path 1
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: C path 2
+  steps:
+  - intent: thank_you
+  - action: utter_thank_you
+
+- story: D path
+  steps:
+  - intent: help
+  - action: utter_help
+
+- story: E path
+  steps:
+  - intent: find_products
+  - action: action_find_product
+
+- story: F path
+  steps:
+  - intent: find_hotsales
+  - action: utter_find_hotsales
+
+- story: G path
+  steps:
+  - intent: wantto_buy
+  - action: utter_wantto_buy
+
+- story: H path
+  steps:
+  - intent: deal_infor
+  - action: action_sale_form
+
+- story: J path
+  steps:
+  - intent: policy
+  - action: utter_policy
+
+- story: K path
+  steps:
+  - intent: product_detail
+  - action: utter_product_detail
+
+  
+- story: I path
+  steps:
+  - intent: out_of_scope
+  - action: action_chatgpt_default_fallback
+
+
